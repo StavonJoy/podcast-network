@@ -1,0 +1,15 @@
+{
+  "name": "shoutem.theme",
+  "version": "2.5.0-build1608644128652",
+  "dependencies": {
+    "@shoutem/theme": "~0.11.5",
+    "@shoutem/ui": "~4.0.18",
+    "react-native-svg-transformer": "~0.14.3"
+  },
+  "peerDependencies": {
+    "@shoutem/redux-io": "*"
+  },
+  "nativeDependencies": [
+    "@shoutem/ui"
+  ]
+}

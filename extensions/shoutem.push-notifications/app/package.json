@@ -1,0 +1,12 @@
+{
+  "name": "shoutem.push-notifications",
+  "version": "2.5.0-build1608643259636",
+  "description": "Base extension for push notifications",
+  "dependencies": {
+    "xcode": "~3.0.0",
+    "react-native-permissions": "~2.2.1"
+  },
+  "nativeDependencies": [
+    "react-native-permissions"
+  ]
+}

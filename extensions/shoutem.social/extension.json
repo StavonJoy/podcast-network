@@ -1,0 +1,85 @@
+{
+  "name": "social",
+  "title": "Social",
+  "version": "2.5.0",
+  "platform": "2.5.*",
+  "skipClone": false,
+  "releaseNotes": "* Added infinite load for Post details comments\n* Fixed like status update on Post details screen\n* Fixed 'Create new status' input and header",
+  "description": "Let members create posts, comment and like them",
+  "categories": [
+    "users"
+  ],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "icon": "server/assets/add-community-image.png",
+  "screens": [
+    {
+      "name": "SocialWallScreen"
+    },
+    {
+      "name": "StatusDetailsScreen"
+    },
+    {
+      "name": "CreateStatusScreen"
+    },
+    {
+      "name": "MembersScreen"
+    },
+    {
+      "name": "SearchScreen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "title": "Wall",
+      "name": "wall",
+      "screen": "@.SocialWallScreen",
+      "icon": "theme://feed-wall.png",
+      "adminPages": [
+        {
+          "page": "@.ShortcutInfoPage",
+          "title": "Info"
+        }
+      ]
+    },
+    {
+      "title": "Members",
+      "name": "members",
+      "screen": "@.MembersScreen",
+      "icon": "theme://members.png",
+      "adminPages": [
+        {
+          "page": "@.ShortcutInfoPage",
+          "title": "Info"
+        }
+      ]
+    }
+  ],
+  "settingsPages": [
+    {
+      "page": "@.SocialSettingsPage",
+      "title": "Settings"
+    }
+  ],
+  "pages": [
+    {
+      "name": "SocialSettingsPage",
+      "path": "server/build/index.html?page=SocialSettingsPage",
+      "type": "html"
+    },
+    {
+      "name": "ShortcutInfoPage",
+      "path": "server/build/index.html?page=ShortcutInfoPage",
+      "type": "html"
+    }
+  ],
+  "settings": {
+    "authApiEndpoint": "auth.api.shoutem.com",
+    "maxStatusLength": 140,
+    "enablePhotoAttachments": true,
+    "enableComments": true,
+    "enableInteractions": true
+  }
+}

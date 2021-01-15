@@ -1,0 +1,11 @@
+{
+  "name": "shoutem.radio",
+  "version": "2.5.0-build1608643415346",
+  "description": "Radio extension",
+  "dependencies": {
+    "@sindresorhus/slugify": "0.9.1"
+  },
+  "peerDependencies": {
+    "@shoutem/ui": "*"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "podcast-network",
+  "title": "Podcast-network",
+  "version": "0.0.1",
+  "description": "A network of podcasts which will use RSS podcast reader o",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "PodList"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "PodList",
+      "title": "Podcasts",
+      "description": "A shortcut for PodList",
+      "screen": "@.PodList"
+    }
+  ]
+}

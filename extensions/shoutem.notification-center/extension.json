@@ -1,0 +1,77 @@
+{
+  "name": "notification-center",
+  "title": "Notification center",
+  "version": "2.5.0",
+  "platform": "2.5.*",
+  "description": "View and manage push notifications within the app",
+  "icon": "./server/assets/images/add-notifications-settings-image.png",
+  "categories": [
+    "users"
+  ],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "shortcuts": [
+    {
+      "title": "Notification center",
+      "description": "List of received notifications",
+      "name": "openNotificationsScreen",
+      "icon": "theme://activity.png",
+      "screen": "@.NotificationsScreen",
+      "settings": {
+        "defaultShortcutTitle": "Notification center",
+        "extensionTitle": "Notifications"
+      }
+    },
+    {
+      "title": "Group settings",
+      "description": "List of available push groups",
+      "name": "openPushGroupsScreen",
+      "icon": "theme://settings.png",
+      "screen": "@.PushGroupsScreen",
+      "settings": {
+        "defaultShortcutTitle": "Group settings",
+        "extensionTitle": "Notifications"
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "NotificationsScreen"
+    },
+    {
+      "name": "PushGroupsScreen"
+    }
+  ],
+  "settingsPages": [
+    {
+      "page": "@.NotificationsPage",
+      "title": "Notifications",
+      "categories": [
+        "push"
+      ]
+    },
+    {
+      "page": "@.GroupsPage",
+      "title": "Groups",
+      "categories": [
+        "push"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "NotificationsPage",
+      "type": "react-page"
+    },
+    {
+      "name": "GroupsPage",
+      "type": "react-page"
+    }
+  ]
+}

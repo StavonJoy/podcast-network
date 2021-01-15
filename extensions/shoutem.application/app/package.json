@@ -1,0 +1,20 @@
+{
+  "name": "shoutem.application",
+  "version": "2.5.0-build1608640504477",
+  "dependencies": {
+    "react-native-device-info": "~5.4.0",
+    "react-native-maps": "~0.26.0",
+    "react-native-splash-screen": "^3.2.0"
+  },
+  "peerDependencies": {
+    "@shoutem/redux-composers": "*",
+    "@shoutem/redux-io": "*",
+    "@shoutem/theme": "*",
+    "@shoutem/ui": "*"
+  },
+  "nativeDependencies": [
+    "react-native-device-info",
+    "react-native-maps",
+    "react-native-splash-screen"
+  ]
+}

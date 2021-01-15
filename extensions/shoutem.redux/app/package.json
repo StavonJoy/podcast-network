@@ -1,0 +1,8 @@
+{
+  "name": "shoutem.redux",
+  "version": "2.5.0-build1608643433518",
+  "dependencies": {
+    "@shoutem/redux-composers": "0.1.4",
+    "@shoutem/redux-io": "3.0.1-beta.3"
+  }
+}

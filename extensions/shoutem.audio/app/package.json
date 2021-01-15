@@ -1,0 +1,18 @@
+{
+  "name": "shoutem.audio",
+  "version": "2.5.0-build1608640541742",
+  "description": "Track player components for other extensions to utilize.",
+  "dependencies": {
+    "react-native-track-player": "2.0.0-rc13",
+    "xcode": "~3.0.0"
+  },
+  "peerDependencies": {
+    "@shoutem/redux-composers": "*",
+    "@shoutem/redux-io": "*",
+    "@shoutem/theme": "*",
+    "@shoutem/ui": "*"
+  },
+  "nativeDependencies": [
+    "react-native-track-player"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "shoutem.cms",
+  "version": "2.5.2-build1610365213452",
+  "description": "Shoutem CMS extension",
+  "dependencies": {
+    "@react-native-community/geolocation": "~2.0.0"
+  },
+  "peerDepencies": {
+    "@shoutem/redux-composers": "*",
+    "@shoutem/redux-io": "*",
+    "@shoutem/ui": "*"
+  },
+  "nativeDependencies": [
+    "@react-native-community/geolocation"
+  ]
+}

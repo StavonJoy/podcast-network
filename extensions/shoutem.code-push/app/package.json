@@ -1,0 +1,10 @@
+{
+  "name": "shoutem.code-push",
+  "version": "2.5.0-build1608640899190",
+  "dependencies": {
+    "react-native-code-push": "~6.2.0"
+  },
+  "nativeDependencies": [
+    "react-native-code-push"
+  ]
+}

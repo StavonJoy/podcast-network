@@ -1,0 +1,17 @@
+{
+  "name": "shoutem.loyalty",
+  "version": "2.5.1-build1610365285959",
+  "dependencies": {
+    "react-native-qrcode-svg": "~6.0.0",
+    "react-native-svg": "^9.13.0"
+  },
+  "peerDependencies": {
+    "@shoutem/redux-io": "*",
+    "@shoutem/theme": "*",
+    "@shoutem/ui": "*"
+  },
+  "nativeDependencies": [
+    "react-native-svg",
+    "react-native-qrcode-svg"
+  ]
+}

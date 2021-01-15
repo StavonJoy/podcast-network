@@ -1,0 +1,92 @@
+{
+  "name": "video",
+  "title": "Videos",
+  "version": "2.5.0",
+  "platform": "2.5.*",
+  "description": "Show a video gallery",
+  "releaseNotes": "* Added detauls screen layout without share button",
+  "icon": "server/assets/add-videos-image.png",
+  "dependencies": [
+    "shoutem.cms",
+    "shoutem.layouts",
+    "shoutem.navigation"
+  ],
+  "categories": [
+    "media"
+  ],
+  "i18n": {
+    "locale": "en",
+    "translationPath": "server/translations/en.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoutem/extensions"
+  },
+  "shortcuts": [
+    {
+      "name": "openVideosList",
+      "title": "Videos",
+      "icon": "theme://play.png",
+      "screen": "@.VideosList",
+      "capabilities": [
+        "shoutem.cms.import-csv"
+      ],
+      "adminPages": [
+        {
+          "page": "shoutem.cms.CmsPage",
+          "title": "Content",
+          "parameters": {
+            "schema": "@.Videos"
+          }
+        },
+        {
+          "page": "shoutem.layouts.LayoutPage",
+          "title": "Layout"
+        }
+      ],
+      "settings": {
+        "defaultShortcutTitle": "Videos",
+        "extensionTitle": "Videos"
+      }
+    }
+  ],
+  "screens": [
+    {
+      "name": "VideosSmallList",
+      "title": "Small list",
+      "image": "server/assets/screens/small-list.png",
+      "extends": "@.VideosList"
+    },
+    {
+      "name": "VideosList",
+      "title": "Big list",
+      "image": "server/assets/screens/big-list.png",
+      "navigatesTo": [
+        "@.VideoDetails"
+      ]
+    },
+    {
+      "name": "VideoDetails",
+      "title": "Details",
+      "image": "server/assets/screens/details.png",
+      "settings": {
+        "shareable": true
+      }
+    },
+    {
+      "name": "VideoDetailsWithoutShare",
+      "title": "Details without share button",
+      "image": "server/assets/screens/details-without-share.png",
+      "extends": "@.VideoDetails",
+      "settings": {
+        "shareable": false
+      }
+    }
+  ],
+  "dataSchemas": [
+    {
+      "name": "Videos",
+      "path": "server/data-schemas/Videos.json"
+    }
+  ]
+}
